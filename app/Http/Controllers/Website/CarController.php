@@ -13,8 +13,7 @@ use Excel;
 
 class CarController extends Controller
 {
-
-    protected $cars;
+    protected $car;
     protected $uploader;
 
     protected $carFillableData = [
