@@ -1,0 +1,11 @@
+To: mohamed moussa <prince4moha@yahoo.com>
+Subject: Your Reminder!
+Sender: mohamed moussa <prince4moha@gmail.com>
+Message-ID: <ab4534fe97842f09af912a82420ceff4@localhost>
+Date: Thu, 09 Feb 2017 14:14:15 +0000
+From: Your Application <hello@app.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<p>Hello Mohamed Moussa Mohamed Moussa</p>
