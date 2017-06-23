@@ -1,0 +1,677 @@
+/*
+    Author: Omar Muhammad El-Dalil
+    contact: omar.eldaleel@gmail.com
+*/
+
+
+/**************************************************************************
+**************************************************************************/
+/***********     General for all  *********/
+/**************************************************************************
+**************************************************************************/
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+@font-face {
+    font-family: 'Kufi';
+    src: url('../fonts/DroidKufi-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'JF-Flat';
+    src: url('../fonts/JF-Flat-regular.ttf');
+}
+body{
+    /*font-family: 'Kufi','JF-Flat', serif;  /*da ana 3amlo*/
+    font-family: 'Droid Arabic Kufi', serif;
+    font-size: 100%;
+}
+
+
+body.data_page{
+    background-color: #f7f7f7;
+}
+.bold{
+    font-weight: bold;
+}
+table a ,table a:visited {
+    transition: all 0.2s ease-in-out;
+}
+table a:hover{
+    text-decoration: none;
+}
+.data_page input {
+    text-align: center;
+}
+
+/**************************************************************************/
+/**************  Welcome page *********************/
+/**************************************************************************/
+/*default/index.php*/
+.welcomehome{
+    background:#222D3A;
+    color: #FFF;
+}
+.formdiv{
+    margin : 0 auto;
+    margin-top: 4%;
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(25,159,133,.2);
+    border-radius: 3px;
+}
+
+.welcome_logo img{
+    max-height: 200px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.form-control{
+    border-radius: 5px;
+}
+.welcome_form_group{
+    padding: 10px;
+}
+
+#Rememberme{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.rem{
+    float: left;
+    margin-top: 12px;
+}
+
+.input-group{
+    margin: 20px 0;
+}
+.input-group input{
+    height: 45px;
+}
+.welcome_form_group .subb{
+    margin: 6% 38% 0 0 ;
+    padding: 10px;
+    background: #198573;
+    color: #FFFFFF;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.welcome_form_group .subb:hover {
+    border:1px solid #FFF;
+    color: #fefefe;
+    opacity: 0.8;
+}
+.form-group h4 {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.form-group h4 a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/***********************************************************************************
+************************************************************************************
+************************************************************************************
+
+
+/**********************************************************
+**********      User Navigation page        ***************
+***********************************************************/
+
+body.firstnav{
+
+    /*background-color: #222222;*/
+    /*background: linear-gradient(131deg, #222222, #8a927a);*/
+    background:#222D3A;
+    height: 100%;
+
+}
+div img.bc_center{
+    position: absolute;
+    opacity: 0.3;
+    left: 28%;
+    top: 36%;
+    /*right: -5%;*/
+    /*top: 120%;*/
+    max-width: 581px;
+    max-height: 256px;
+    width: auto;
+    height:auto;
+    /*margin-left:-256px;*/
+}
+
+.butnav{
+    margin: 23px;
+    width: 473px;
+    height: 206px;
+    vertical-align: middle;
+    border-radius: 20px;
+    text-align: center;
+    font-size : 200%;
+    font-weight: bold;
+    color: #ecf0f1;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.butnav:hover{
+    background-color: rgba(25,159,133,.7);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s ;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.butnav:first-child{
+    margin-top: 80px;
+}
+.pcenter{
+    position: relative;
+    top: 90px;
+}
+
+.pcenter a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/***************************************************************
+***********      Pages      ************************************
+***************************************************************/
+
+a.navbar-brand img {
+    max-height: 88px;
+    max-width: 137px;
+    height: auto;
+    width: auto;
+    padding-right: 22px;
+    margin-top: -12px;
+}
+ul.nav.navbar-nav li a{
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+ul.nav.navbar-nav li a:hover {
+    -webkit-transition:border-bottom .1s ease;
+    transition:border-bottom .2s ease;
+    border-bottom: 5px solid #FE9A23;
+}
+
+.navbar-inverse .navbar-nav >.active > a,
+.navbar-inverse .navbar-nav >.active > a:hover,
+.navbar-inverse .navbar-nav >.active > a:focus{
+
+    border-bottom: 5px solid #FE9A23;
+    background-color: #222222;
+
+}
+.navbar{
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: bold !important;
+    /*background-color: #3a3a3a;*/
+}
+
+.searchbar{
+    float: left;
+    margin-bottom: 30px;
+    width: 25%;
+}
+.tag{
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 1% 0;
+    margin-bottom: 16px;
+    width: 50%;
+    border: 1px solid #dddddd;
+    font-size: 1.6em;
+    font-weight: bold;
+    background-color:#232734;
+    color: #FFFFFF;
+
+}
+.tag p{
+    margin: 1px;
+    text-align: center;
+}
+
+
+table.data{
+    text-align: center;
+    margin: 0 auto;
+}
+
+table.dataTable,
+table.dataTable thead th,
+table.dataTable thead td{
+    border-collapse: collapse !important;
+    border-bottom: 1px solid #e4e4e4 !important;
+}
+
+
+table.data thead{
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #1abc9c;
+    vertical-align: middle;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    text-align: center;
+}
+
+.data > thead > tr > th,
+.data > tbody > tr > th,
+.data > thead > tr > td,
+.data > tbody > tr > td{
+    vertical-align: middle;
+}
+
+tbody{
+    font-size: 12px;
+}
+
+table.data tr:nth-child(2n){
+    /*background-color: #f7e1b5;*/
+    background-color: rgba(96, 125, 139, 0.1);
+}
+
+.insurance{
+    background-color: rgb(0,176,80);
+    min-width: 80px;
+}
+.wid-mod{
+    min-width: 200px;
+}
+.wid-mod.detailed_address{
+    min-width: 380px;
+}
+.papers{
+    min-width: 80px;
+}
+table.indv {
+    /*width: 50%;*/
+}
+table.indv th {
+    font-size: 14px;
+}
+
+.fixedcol_style{
+    /*min-width: 200px;*/
+    background-color: #76838c;
+    color: white;
+    font-weight: bold;
+}
+/* this is for Firefox fixed column scroll bar */
+.DTFC_LeftBodyLiner{
+    overflow-x : hidden;
+}
+
+#emptable{
+    overflow: scroll;
+}
+
+#emptable table tr td, #emptable table tr th{
+    min-width: 200px;
+}
+#emptable table tfoot tr td select{
+    max-width: 200px;
+}
+
+#emptable table tr td:first-of-type, table tr th:first-of-type,#emptable table tfoot tr td:first-of-type select{
+    max-width: 50px;
+}
+
+#emptable table tbody tr td a{
+    color: #FFFFFF;
+}
+
+#emptable table tbody tr td a:hover{
+    color: #FFFFFF;
+}
+
+.wid-mod{
+    min-width: 50px !important;
+}
+
+#rentals-table select{
+    max-width: 60px;
+}
+
+#members_table tbody{
+    font-size: 14px;
+}
+
+/****************************************************
+/*****      Vacations starts here       *************
+****************************************************/
+
+.applied_vac{
+    margin: 24px auto;
+    font-size: 2.3em;
+    text-align: center;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+}
+
+div.applied_vac a, a:visited{
+    text-decoration: none;
+}
+.no_vac{
+    color: white;
+    background-color: #3EB2D4;
+}
+div.applied_vac span{
+    padding-right: 20px;
+}
+
+.bubble{
+    margin: 16px auto 9px auto;
+    padding: 5px;
+    font-size: 15px;
+    width: 20%;
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: -51px;
+    right: 51%;
+    display: none;
+}
+
+
+.bubble:after {
+    content: "";
+    border-width: 20px;
+    border-color: #fefef2 transparent transparent;
+    border-style: solid;
+    position: absolute;
+    top: 100%;
+    right: 43%;
+}
+
+/*  pending starts  */
+
+.pending{
+    color: white;
+    background-color: #1e1c9c;
+    text-align: center;
+}
+
+
+.pending a:hover{
+    transition: all 0.5s ease;
+    color: gold;
+}
+
+/*  pending ends  */
+
+
+/*  approved starts  */
+
+.approved{
+    color: white;
+    background-color: #439743;
+    text-align: center;
+}
+
+.approved a:hover{
+    transition: all 0.5s ease;
+    color: #cacaca;
+}
+
+/*  approved ends  */
+
+
+/*  rejected starts  */
+
+.rejected{
+    color: white;
+    background-color: #C63834;
+    text-align: center;
+}
+
+.rejected a:hover{
+    transition: all 0.5s ease;
+    color: #cacaca;
+}
+
+/*  rejected ends  */
+
+
+
+/* definition starts*/
+
+div.definition{
+    height: 42px;
+    width: 100%;
+}
+div.definition p{
+    float: right;
+    position: relative;
+    top: 10px;
+    font-size: 1.5em;
+}
+div.definition button{
+    float: left;
+    padding: 6px;
+    font-size: 1.3em;
+}
+div.definition button span{
+    float: left;
+    padding-right: 12px;
+}
+
+/*  definition ends */
+
+/* my vacations table starts */
+table.vac {
+    margin: 10px 0;
+}
+table.vac thead th {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #1abc9c;
+    text-align: center;
+    vertical-align: middle;
+}
+table.vac tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+button .glyphicon{
+    line-height:inherit;
+}
+
+/* table ends */
+
+/*      admin-nav    */
+
+ul.ad_nav {
+    margin-top: 10%;
+    font-size: 25px;
+    list-style: none;
+}
+ul.ad_nav li {
+    float: right;
+    height: 200px;
+    width: 40%;
+    text-align: center;
+}
+ul.ad_nav li:hover{
+    border-radius: 30px;
+    background-color: rgba(25,159,133,.7);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s ;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+ul.ad_nav li:hover a{
+    color: #FFFFFF;
+}
+
+ul.ad_nav li a{
+    text-decoration: none;
+    position: relative;
+    top: 40%;
+
+}
+ul.ad_nav li:last-child{
+    margin-right: 10%;
+}
+
+/*****     individual vacations ***/
+
+.form_vac_individuals{
+    width: 25%;
+    vertical-align: middle;
+    position: relative;
+    right: 51%;
+}
+.tag_form_vac{
+    border: 1px solid black;
+    margin: 10px auto 0 auto;
+    padding: 9px;
+    width: 40%;
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: bold;
+    background-color: #232734;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.form_vac{
+    margin-top: 10px ;
+    padding: 15px;
+    height: 700px;
+    font-size: 1.5em;
+    border: 1px double black;
+}
+
+
+.form_vac ul li {
+    float: right;
+    list-style: none;
+    padding-right: 15%;
+}
+.form_vac ul li.vac_type_checked:after {
+    content: "\2713";
+    border: 1px solid black;
+    margin-right:3px;
+    padding: 0 5px;
+}
+.form_vac_upper p {
+    margin-top: 19px;
+}
+.form_vac_upper{
+    border-bottom: 2px solid black;
+}
+.form_vac_down{
+    line-height: 2;
+}
+.form_vac_down table tr td{
+    width: 32%;
+    font-size: 14px;
+}
+
+.btn-cir{
+    border-radius: 30px;
+    float: right;
+    border: none;
+}
+
+#members_table tr:nth-child(2n){
+    background-color: #E8EBED;
+}
+
+#members_table tbody tr td:last-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+#members_table tbody tr td:last-child a{
+    padding: 5px 8%;
+}
+
+#approvals_table tbody td:last-child div {
+    width: 106%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#approvals_table tr:nth-child(2n){
+    background-color: #efefef;
+}
+
+.app_but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app_but button {
+    padding: 10px 20px;
+}
+.app_but button  a{
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+/**** details page ****/
+.details-page img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.user_edit {
+    width: 70%;
+    margin: auto;
+}
+div.definition button a, #emp_vac_table tbody td button a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#emp_vac_table tbody td button span {
+    position: relative;
+    top: 7px;
+}
+
+select {
+    padding-top: 0 !important;
+
+}
+
+.input-table-col > input{
+    width: 50px;
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+
+.label-table {
+    width: 76px;
+}
+
+.label-table h4{
+    font-size: 12px;
+}
+.label-table.emp-label-edit h4{
+    font-size: 11px;
+}

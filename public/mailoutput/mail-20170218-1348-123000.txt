@@ -1,0 +1,11 @@
+To: Tutorials Point <prince4moha@gmail.com>
+Subject: Laravel Basic Testing Mail
+Message-ID: <46731e78097b484d975c5541c4f46756@localhost>
+Date: Sat, 18 Feb 2017 13:48:55 +0000
+From: Virat Gandhi <prince4moha@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<h1>Hi, Virat Gandhi</h1>
+<p>Sending Mail from Laravel.</p>
