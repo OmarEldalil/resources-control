@@ -13,7 +13,6 @@ use Excel;
 
 class CarController extends Controller
 {
-
     protected $car;
     protected $uploader;
 
