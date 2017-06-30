@@ -12,6 +12,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Excel;
+use Illuminate\Support\Facades\Auth;
 
 class RentalController extends Controller
 {
@@ -32,6 +33,11 @@ class RentalController extends Controller
         $this->rental = $rental;
         $this->uploader = $uploader;
         $this->rentalImage = $rentalImage;
+
+        $user = Auth::user();
+        if(! preg_match("/rentals/",$user->abilities )){
+            abort(404);
+        }
     }
 
     public function allRentals () {

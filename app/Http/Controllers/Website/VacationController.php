@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use Illuminate\Support\Facades\Auth;
 use Mail;
 use Excel;
 
@@ -35,6 +36,11 @@ class VacationController extends Controller
         $this->vacationRequest = $vacationRequest;
         $this->vacation = $vacation;
         $this->uploader = $uploader;
+
+        $user = Auth::user();
+        if(! preg_match("/vacations/",$user->abilities )){
+            abort(404);
+        }
 
     }
 

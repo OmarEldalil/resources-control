@@ -13,6 +13,7 @@ use App\Http\Controllers\Controller;
 
 use App\Models\Employee;
 
+use Illuminate\Support\Facades\Auth;
 use Mail;
 use Excel;
 
@@ -43,6 +44,13 @@ class EmployeeController extends Controller
         $this->employee = $employee;
         $this->uploader = $uploader;
         $this->vacation = $vacation;
+
+        $user = Auth::user();
+        if(!preg_match("/employee-images/" ,$user->abilities)){
+            if (!preg_match("/insurance/" ,$user->abilities)){
+                abort(404);
+            }
+        }
 
         $imageInputs = $this->photoInputs;
         view()->composer(['website.edit_employee'] ,

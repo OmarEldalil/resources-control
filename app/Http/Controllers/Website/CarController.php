@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use Excel;
+use Illuminate\Support\Facades\Auth;
 
 class CarController extends Controller
 {
@@ -30,6 +31,10 @@ class CarController extends Controller
         $this->car = $car;
         $this->uploader = $uploader;
 
+        $user = Auth::user();
+        if(! preg_match("/cars/",$user->abilities )){
+            abort(404);
+        }
 
         $imageInputs = $this->imageInputs;
         view()->composer(['website.cars.single_car' , 'website.cars.car_form'] ,

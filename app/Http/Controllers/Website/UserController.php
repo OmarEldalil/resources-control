@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -20,6 +21,10 @@ class UserController extends Controller
 
         $this->user = $user;
 
+//        $this->middleware('UsersMiddleware');
+        if((Auth::user()->authority) != "admin"){
+            abort(404);
+        }
     }
 
     public function users () {
