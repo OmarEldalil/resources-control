@@ -38,8 +38,10 @@ class VacationController extends Controller
         $this->uploader = $uploader;
 
         $user = Auth::user();
-        if(! preg_match("/vacations/",$user->abilities )){
+        if ($user->authority != "admin" && $user->authority != "reader") {
+            if(! preg_match("/vacations/",$user->abilities )){
             abort(404);
+            }
         }
 
     }

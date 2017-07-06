@@ -32,8 +32,10 @@ class CarController extends Controller
         $this->uploader = $uploader;
 
         $user = Auth::user();
-        if(! preg_match("/cars/",$user->abilities )){
-            abort(404);
+        if ($user->authority != "admin" && $user->authority != "reader") {
+            if (!preg_match("/cars/", $user->abilities)) {
+                abort(404);
+            }
         }
 
         $imageInputs = $this->imageInputs;

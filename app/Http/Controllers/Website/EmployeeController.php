@@ -46,9 +46,12 @@ class EmployeeController extends Controller
         $this->vacation = $vacation;
 
         $user = Auth::user();
-        if(!preg_match("/employee-images/" ,$user->abilities)){
-            if (!preg_match("/insurance/" ,$user->abilities)){
-                abort(404);
+//        die(var_dump($user->authority));
+        if ($user->authority != "admin" && $user->authority != "reader"){
+            if(!preg_match("/employee-images/" ,$user->abilities)){
+                if (!preg_match("/insurance/" ,$user->abilities)){
+                    abort(404);
+                }
             }
         }
 

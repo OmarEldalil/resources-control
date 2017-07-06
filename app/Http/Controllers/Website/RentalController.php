@@ -35,8 +35,10 @@ class RentalController extends Controller
         $this->rentalImage = $rentalImage;
 
         $user = Auth::user();
-        if(! preg_match("/rentals/",$user->abilities )){
+        if ($user->authority != "admin" && $user->authority != "reader") {
+            if(! preg_match("/rentals/",$user->abilities )){
             abort(404);
+            }
         }
     }
 
