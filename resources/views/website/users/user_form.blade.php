@@ -57,12 +57,10 @@
 
     <div class="form-group" style="text-align: center">
 
-        <h4>{{ Form::label('authority' , 'الصلاحية : ') }}</h4>
+        <h4>{{ Form::label('authority' , 'السلطة: ') }}</h4>
 
             {{ Form::radio('authority' , 'admin' , false) }} <strong style="font-size: 14px">Admin</strong> <br />
             {{ Form::radio('authority' , 'reader' , false) }} <strong style="font-size: 14px">Reader</strong> <br />
-
-        <button class="btn btn-danger cancel-radio">ألغاء الخيارات</button>
 
     </div>
 
@@ -125,20 +123,34 @@
 
 <script>
 
-    $(document).ready(function () {
+  var chkbox= document.querySelectorAll('input[type= "checkbox"]');
+  var rad=document.querySelectorAll('input[type= "radio"]');
 
-        $('.cancel-radio').on('click' , function (e) {
+  function chkHandler(){
+      for (let x=0 ; x<chkbox.length ; x++){
+              for (let y=0 ; y<rad.length ; y++){
+                  rad.item(y).checked = false;
+              }
+      }
+  }
+  function radioHandler(){
+      for (let x=0 ; x<rad.length ; x++){
+              for (let y=0 ; y<chkbox.length ; y++){
+                  chkbox.item(y).checked = false;
+              }
+      }
+  }
+  for(let i =0 ; i<chkbox.length  ; i++){
+      chkbox[i].onchange= function(){
+          chkHandler();
+      };
+  }
+  for(let i =0 ; i<rad.length  ; i++){
+      rad[i].onchange= function(){
+          radioHandler();
+      };
+  }
 
-            e.preventDefault();
-            $('input[type="radio"]').attr('checked' , false);
-
-        });
-
-        $('input[type="radio"]').on('click' , function () {
-            $(this).siblings('input[type="radio"]').attr('checked' , false)
-        });
-
-    });
 
 </script>
 
